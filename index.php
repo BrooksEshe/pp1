@@ -1,3 +1,7 @@
+<?php
+ini_set('display_errors',1);
+error_reporting(E_ALL);
+?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -15,6 +19,14 @@
     include "functions.php";
 
     printArray($numbers);
+    echo "<br>";
+    largest($numbers);
+    echo "<br>";
+    average($numbers);
+    echo "<br>";
+    removeDups($numbers);
+    echo "<br>";
+    distribution($numbers);
 ?>
 
 </body>
